@@ -15,7 +15,7 @@ CORS(app)
 
 # --- Load all necessary components on startup ---
 device = "cuda" if torch.cuda.is_available() else "cpu"
-model, preprocess = clip.load("ViT-B/32", device=device)
+model, preprocess = clip.load("ViT-B/32", device=device, jit=False, download_root=".")
 
 # Load pre-computed embeddings and valid paths (which are now URLs)
 with open("product_embeddings.pkl", "rb") as f:

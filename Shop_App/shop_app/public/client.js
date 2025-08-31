@@ -84,7 +84,7 @@ if (similarityForm) {
             headers['Content-Type'] = 'application/json';
         }
 
-        fetch('http://localhost:5000/find_similar', {
+        fetch('https://visual-matcher-api.onrender.com/find_similar', {
             method: 'POST',
             headers: headers,
             body: body,

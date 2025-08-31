@@ -2,9 +2,14 @@ const similarityForm = document.querySelector('#similarityForm');
 const searchImageUpload = document.getElementById('searchImageUpload');
 const searchImageUrlInput = document.getElementById('searchImageUrl');
 const uploadedImagePreview = document.getElementById('uploadedImagePreview');
+const scoreFilter = document.getElementById('scoreFilter');
+const scoreValue = document.getElementById('scoreValue');
+const resultsContainer = document.getElementById('searchResults');
+const originalProducts = document.getElementById('originalProducts');
 
 let searchImageFile = null;
 let searchImageUrl = '';
+let cachedResults = [];
 
 // Show preview when a file is selected
 if (searchImageUpload) {
@@ -50,19 +55,21 @@ if (searchImageUrlInput) {
     });
 }
 
+// Combined event listener for form submission and caching results
 if (similarityForm) {
     similarityForm.addEventListener('submit', (e) => {
         e.preventDefault();
 
-        // Hide the original products container
-        const originalProducts = document.getElementById('originalProducts');
+        // Show a loader and hide original products
         if (originalProducts) {
             originalProducts.style.display = 'none';
+        }
+        if (resultsContainer) {
+            resultsContainer.innerHTML = '<h4>Searching for similar products...</h4>';
         }
 
         let imageData = searchImageFile;
         let isFile = true;
-
         if (searchImageUrl) {
             imageData = searchImageUrl;
             isFile = false;
@@ -70,12 +77,14 @@ if (similarityForm) {
 
         if (!imageData) {
             console.error("Please select an image or enter a URL to search.");
+            if (resultsContainer) {
+                resultsContainer.innerHTML = '';
+            }
             return;
         }
 
         let body;
         let headers = {};
-
         if (isFile) {
             body = new FormData();
             body.append('file', imageData);
@@ -84,7 +93,7 @@ if (similarityForm) {
             headers['Content-Type'] = 'application/json';
         }
 
-        fetch('https://visual-matcher-api.onrender.com/find_similar', {
+        fetch('http://localhost:5000/find_similar', {
             method: 'POST',
             headers: headers,
             body: body,
@@ -99,23 +108,26 @@ if (similarityForm) {
         })
         .then(data => {
             console.log('Similar products:', data.results);
-            displaySimilarProducts(data.results);
+            cachedResults = data.results; // Cache the results
+            displaySimilarProducts(cachedResults);
         })
-        .catch(error => console.error('Error finding similar products:', error));
+        .catch(error => {
+            console.error('Error finding similar products:', error);
+            if (resultsContainer) {
+                resultsContainer.innerHTML = `<p class="text-danger">An error occurred: ${error.message}</p>`;
+            }
+        });
     });
 }
 
 function displaySimilarProducts(results) {
-    const resultsContainer = document.getElementById('searchResults');
     if (!resultsContainer) {
         console.error("Results container not found.");
         return;
     }
-
+    
     resultsContainer.innerHTML = '';
 
-    // Filter products with score >= value from slider
-    const scoreFilter = document.getElementById('scoreFilter');
     let minScore = 0.40;
     if (scoreFilter) {
         minScore = parseFloat(scoreFilter.value);
@@ -131,66 +143,34 @@ function displaySimilarProducts(results) {
     filteredResults.forEach(product => {
         const col = document.createElement('div');
         col.className = 'product col';
+        
+        // Correctly handle the case where title, price, or discount might be missing
+        const title = product.title || "Product";
+        const price = product.price !== undefined ? `$${product.price}` : "N/A";
+        const discount = product.discountPercentage !== undefined ? `${product.discountPercentage}%` : "0%";
 
-       col.innerHTML = `
-    <div class="card h-100 shadow-sm">
-        <img src="${product.image_path}" class="card-img-top" alt="${product.title}" style="height:200px;width:240px; object-fit:cover;" />
-        <div class="card-body d-flex flex-column justify-content-between">
-            <div class="text-center">
-                <h6 class="card-title">${product.title || "Product"}</h6>
-                <p class="mb-1">Score: ${product.score.toFixed(2)}</p>
-                <p class="mb-1"><b>Price:</b> $${product.price ?? "N/A"}</p>
-                <p class="mb-1 text-success"><b>Discount:</b> ${product.discountPercentage ?? 0}%</p>
+        col.innerHTML = `
+            <div class="card h-100 shadow-sm">
+                <img src="${product.image_path}" class="card-img-top" alt="${title}" style="height:200px;width:240px; object-fit:cover;" />
+                <div class="card-body d-flex flex-column justify-content-between">
+                    <div class="text-center">
+                        <h6 class="card-title">${title}</h6>
+                        <p class="mb-1">Score: ${product.score.toFixed(2)}</p>
+                        <p class="mb-1"><b>Price:</b> ${price}</p>
+                        <p class="mb-1 text-success"><b>Discount:</b> ${discount}</p>
+                    </div>
+                </div>
             </div>
-        </div>
-    </div>
-`;
-
+        `;
         resultsContainer.appendChild(col);
     });
 }
-const scoreFilter = document.getElementById('scoreFilter');
-const scoreValue = document.getElementById('scoreValue');
-let cachedResults = [];
 
+// Event listener for the score filter slider
 scoreFilter?.addEventListener('input', () => {
     const minScore = parseFloat(scoreFilter.value);
     scoreValue.textContent = minScore.toFixed(2);
-
     if (cachedResults.length > 0) {
         displaySimilarProducts(cachedResults);
     }
-});
-
-// In fetch handler, cache results after fetching
-similarityForm?.addEventListener('submit', (e) => {
-    e.preventDefault();
-    // ... existing fetch logic ...
-    fetch('http://localhost:5000/find_similar', {
-        method: 'POST',
-        headers: headers,
-        body: body,
-    })
-    .then(response => {
-        if (!response.ok) {
-            return response.json().then(error => {
-                throw new Error(error.error || 'Unknown error');
-            });
-        }
-        return response.json();
-    })
-    .then(data => {
-    const mappedResults = data.products.map(product => ({
-        id: product.id,
-        title: product.title,
-        price: product.price,
-        discountPercentage: product.discountPercentage,
-        image_path: product.thumbnail,  // map thumbnail to image_path
-        score: product.score !== undefined ? product.score : 1.0  // default score if missing
-    }));
-
-    cachedResults = mappedResults;
-    displaySimilarProducts(cachedResults);
-})
-    .catch(error => console.error('Error finding similar products:', error));
 });

@@ -1,0 +1,256 @@
+body {
+  margin: 0;
+  font-family: "Segoe UI", Roboto, sans-serif;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: #f5f5f5;
+  color: #333;
+}
+
+/* --- NAVBAR --- */
+header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background-color: #fff;
+  border-bottom: 1px solid #ddd;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.75rem 2rem;
+}
+
+.Shop {
+  color: #b53cfb;
+  font-weight: bold;
+  font-size: 2rem;
+  transition: color 0.2s;
+}
+
+.Shop:hover {
+  color: #9043e9;
+}
+
+.user-info {
+  display: flex;
+  gap: 1rem;
+}
+
+ul {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  transition: color 0.2s;
+}
+
+a:hover {
+  color: #9043e9;
+}
+
+/* --- MAIN CONTENT --- */
+main {
+  flex: 1;
+  padding: 2rem;
+  max-width: 1800px;
+  margin: auto;
+  background-color: white;
+  border-radius: 1rem;
+  margin-top: 2rem;
+}
+
+h1 {
+  font-size: 2.2rem;
+  margin-bottom: 1rem;
+  color: #222;
+}
+
+.upload-section {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 2rem;
+  align-items: center;
+}
+
+.upload-section label {
+  font-weight: bold;
+}
+
+input[type="file"],
+input[type="text"] {
+  padding: 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  width: 250px;
+}
+
+#searchbar {
+  padding: 0.75rem 1rem;
+  border: 1px solid #ccc;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  margin: 1.5rem 0;
+  width: 100%;
+  max-width: 400px;
+}
+
+/* --- PRODUCTS GRID --- */
+/* Remove margin-left to align with container */
+.products {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.5rem;
+  width: 100%;
+  /* margin-left: 100px; */ /* Remove or comment out */
+}
+
+/* Add consistent card style for dynamically added similar products */
+#searchResults .product {
+  width: 100%;
+  border: 1px solid #eee;
+  border-radius: 0.75rem;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+  overflow: hidden;
+  text-align: center;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+}
+
+#searchResults .product img {
+  width: 220px;             /* fixed width */
+  height: 210px;            /* fixed height */
+  object-fit: cover;        /* cover so image is not distorted */
+  border-radius: 0.75rem 0.75rem 0 0;
+  margin-bottom: 0;
+}
+
+#searchResults .product .product-title {
+  padding: 0.5rem 0;
+  font-weight: 600;
+  font-size: 1rem;
+  color: #333;
+  width:30%;
+}
+.product:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+
+}
+
+.product img {
+  width: 220px;
+  height: 260px;
+  object-fit: cover;
+  border-radius: 0.75rem;
+  margin-bottom: 0.75rem;
+}
+
+.product-title {
+  margin-top: 0.5rem;
+  font-weight: 600;
+  text-align: center;
+  color: #222;
+}
+
+.crossed-price {
+  text-decoration: line-through;
+  color: #888;
+  font-size: 0.9rem;
+}
+
+.prices {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.price {
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: #222;
+}
+
+.discount {
+  background: #b53cfb;
+  color: #fff;
+  font-size: 0.8rem;
+  font-weight: bold;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.5rem;
+}
+
+/* Score styling for similar products */
+.product-score {
+  margin-top: 0.5rem;
+  font-size: 0.9rem;
+  color: #555;
+  text-align: center;
+}
+
+/* Buttons */
+.button,
+.buy {
+  display: inline-block;
+  background-color: #b53cfb;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  text-align: center;
+  margin-top: 0.5rem;
+  transition: background 0.2s;
+}
+
+.button:hover,
+.buy:hover {
+  background-color: #9043e9;
+  cursor: pointer;
+}
+
+/* --- FOOTER --- */
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 1rem;
+  text-align: center;
+  margin-top: auto;
+  font-size: 0.9rem;
+}
+/* Loader spinner style */
+#loader {
+  position: fixed; /* or absolute based on your layout */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 9999;
+}
+
+.spinner {
+  border: 8px solid #f3f3f3; /* Light grey */
+  border-top: 8px solid #3498db; /* Blue */
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  animation: spin 1s linear infinite;
+}
+
+/* Animation */
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}

@@ -1,0 +1,907 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "title": "High-Performance Running Shoes",
+      "description": "Lightweight and responsive running shoes engineered for speed and comfort. Features a breathable mesh upper and a cushioned sole.",
+      "price": 120,
+      "discountPercentage": 10.0,
+      "rating": 4.9,
+      "stock": 85,
+      "brand": "Nike",
+      "category": "shoes",
+      "thumbnail": "https://images.pexels.com/photos/19090/pexels-photo.jpg",
+      "images": [
+        "https://images.pexels.com/photos/20755674/pexels-photo-20755674.jpeg",
+        "https://images.pexels.com/photos/19090/pexels-photo.jpg",
+        "https://images.pexels.com/photos/20755674/pexels-photo-20755674.jpeg"
+      ],
+      "owner": "admin"
+    },
+    {
+      "id": 2,
+      "title": "Men's Classic T-shirt",
+      "description": "A comfortable and stylish classic fit t-shirt made from 100% premium cotton. Available in various colors.",
+      "price": 25,
+      "discountPercentage": 5.0,
+      "rating": 4.6,
+      "stock": 200,
+      "brand": "H&M",
+      "category": "men tshirts",
+      "thumbnail": "https://images.pexels.com/photos/33675025/pexels-photo-33675025.jpeg",
+      "images": [
+        "https://images.pexels.com/photos/33673266/pexels-photo-33673266.jpeg",
+        "https://images.pexels.com/photos/33675025/pexels-photo-33675025.jpeg",
+        "https://images.pexels.com/photos/33673266/pexels-photo-33673266.jpeg"
+      ],
+      "owner": "admin"
+    },
+    {
+      "id": 3,
+      "title": "Men's Chronograph Watch",
+      "description": "A classic analog chronograph watch with a stainless steel case and genuine leather strap. Water-resistant up to 50 meters.",
+      "price": 180,
+      "discountPercentage": 12.0,
+      "rating": 4.7,
+      "stock": 55,
+      "brand": "Casio",
+      "category": "watches",
+      "thumbnail": "https://images.pexels.com/photos/190819/pexels-photo-190819.jpeg",
+      "images": [
+        "https://images.pexels.com/photos/5018461/pexels-photo-5018461.jpeg",
+        "https://images.pexels.com/photos/190819/pexels-photo-190819.jpeg",
+        "https://images.pexels.com/photos/5018461/pexels-photo-5018461.jpeg"
+      ],
+      "owner": "admin"
+    },
+    {
+      "id": 4,
+      "title": "Women's Denim Jacket",
+      "description": "A stylish and durable denim jacket with a classic button-down design. Perfect for layering and all-season wear.",
+      "price": 60,
+      "discountPercentage": 8.0,
+      "rating": 4.5,
+      "stock": 110,
+      "brand": "Levi's",
+      "category": "women",
+      "thumbnail": "https://images.pexels.com/photos/20448087/pexels-photo-20448087.jpeg",
+      "images": [
+        "https://images.pexels.com/photos/1176619/pexels-photo-1176619.jpeg",
+        "https://images.pexels.com/photos/20448087/pexels-photo-20448087.jpeg",
+        "https://images.pexels.com/photos/1176619/pexels-photo-1176619.jpeg"
+      ],
+      "owner": "admin"
+    },
+    {
+      "id": 5,
+      "title": "Trailblazer Running Shoes",
+      "description": "Durable trail running shoes with enhanced grip and waterproof design for all terrains.",
+      "price": 135,
+      "discountPercentage": 12.0,
+      "rating": 4.8,
+      "stock": 90,
+      "brand": "Adidas",
+      "category": "shoes",
+      "thumbnail": "https://images.pexels.com/photos/684152/pexels-photo-684152.jpeg",
+      "images": [
+        "https://images.pexels.com/photos/812875/pexels-photo-812875.jpeg",
+        "https://images.pexels.com/photos/684152/pexels-photo-684152.jpeg",
+        "https://images.pexels.com/photos/812875/pexels-photo-812875.jpeg"
+      ],
+      "owner": "admin"
+    },
+    {
+      "id": 6,
+      "title": "Men's V-Neck T-shirt",
+      "description": "Soft cotton V-neck t-shirt with a slim fit design, perfect for casual wear.",
+      "price": 30,
+      "discountPercentage": 7.0,
+      "rating": 4.4,
+      "stock": 180,
+      "brand": "Uniqlo",
+      "category": "men tshirts",
+      "thumbnail": "https://images.pexels.com/photos/2229899/pexels-photo-2229899.jpeg",
+      "images": [
+        "https://images.pexels.com/photos/31207776/pexels-photo-31207776.jpeg",
+        "https://images.pexels.com/photos/2229899/pexels-photo-2229899.jpeg",
+        "https://images.pexels.com/photos/31207776/pexels-photo-31207776.jpeg"
+      ],
+      "owner": "admin"
+    },
+    {
+      "id": 7,
+      "title": "Luxury Leather Watch",
+      "description": "Elegant leather strap watch with a minimalist dial and water resistance up to 30 meters.",
+      "price": 220,
+      "discountPercentage": 10.0,
+      "rating": 4.6,
+      "stock": 60,
+      "brand": "Fossil",
+      "category": "watches",
+      "thumbnail": "https://images.pexels.com/photos/236915/pexels-photo-236915.jpeg",
+      "images": [
+        "https://images.pexels.com/photos/236915/pexels-photo-236915.jpeg",
+        "https://images.pexels.com/photos/2155319/pexels-photo-2155319.jpeg",
+        "https://images.pexels.com/photos/236915/pexels-photo-236915.jpeg"
+      ],
+      "owner": "admin"
+    },
+    {
+      "id": 8,
+      "title": "Women dress",
+      "description": "A stylish and durable dress with a classic design. Perfect for summers",
+      "price": 60,
+      "discountPercentage": 8.0,
+      "rating": 4.5,
+      "stock": 110,
+      "brand": "Levi's",
+      "category": "women",
+      "thumbnail": "https://images.pexels.com/photos/33669533/pexels-photo-33669533.jpeg",
+      "images": [
+        "https://images.pexels.com/photos/33669533/pexels-photo-33669533.jpeg",
+        "https://images.pexels.com/photos/33669504/pexels-photo-33669504.jpeg",
+        "https://images.pexels.com/photos/33669533/pexels-photo-33669533.jpeg"
+      ],
+      "owner": "admin"
+    },
+    {
+      "id": 9,
+      "title": "Classic Leather Watch",
+      "description": "A timeless analog watch with a genuine leather strap, minimalist dial, and water resistance for daily use.",
+      "price": 120,
+      "discountPercentage": 15,
+      "rating": 4.8,
+      "stock": 60,
+      "brand": "Fossil",
+      "category": "watches",
+      "thumbnail": "https://images.pexels.com/photos/125779/pexels-photo-125779.jpeg",
+      "images": [
+        "https://images.pexels.com/photos/125779/pexels-photo-125779.jpeg",
+        "https://images.pexels.com/photos/2113994/pexels-photo-2113994.jpeg",
+        "https://images.pexels.com/photos/125779/pexels-photo-125779.jpeg"
+      ],
+      "owner": "admin"
+    },
+    {
+      "id": 10,
+      "title": "Men's Casual T-shirt",
+      "description": "A soft and comfortable cotton t-shirt with a relaxed fit and a small embroidered logo on the chest.",
+      "price": 30,
+      "discountPercentage": 5,
+      "rating": 4.5,
+      "stock": 150,
+      "brand": "Gap",
+      "category": "men tshirts",
+      "thumbnail": "https://images.pexels.com/photos/1656684/pexels-photo-1656684.jpeg",
+      "images": [
+        "https://images.pexels.com/photos/1656684/pexels-photo-1656684.jpeg",
+        "https://images.pexels.com/photos/1227699/pexels-photo-1227699.jpeg",
+        "https://images.pexels.com/photos/1656684/pexels-photo-1656684.jpeg"
+      ],
+      "owner": "admin"
+    },
+    {
+      "id": 11,
+      "title": "Graphic Print T-shirt",
+      "description": "A modern t-shirt with a large graphic print on the front. Made from breathable fabric for all-day comfort.",
+      "price": 40,
+      "discountPercentage": 10,
+      "rating": 4.7,
+      "stock": 100,
+      "brand": "Supreme",
+      "category": "men tshirts",
+      "thumbnail": "https://images.pexels.com/photos/1227699/pexels-photo-1227699.jpeg",
+      "images": [
+        "https://images.pexels.com/photos/1227699/pexels-photo-1227699.jpeg",
+        "https://images.pexels.com/photos/1656684/pexels-photo-1656684.jpeg",
+        "https://images.pexels.com/photos/1227699/pexels-photo-1227699.jpeg"
+      ],
+      "owner": "admin"
+    },
+    {
+      "id": 12,
+      "title": "High-Performance Running Shoes",
+      "description": "Lightweight running shoes with superior cushioning and a responsive foam sole for a smooth run.",
+      "price": 140,
+      "discountPercentage": 15,
+      "rating": 4.9,
+      "stock": 80,
+      "brand": "Nike",
+      "category": "shoes",
+      "thumbnail": "https://images.pexels.com/photos/1598505/pexels-photo-1598505.jpeg",
+      "images": [
+        "https://images.pexels.com/photos/1598505/pexels-photo-1598505.jpeg",
+        "https://images.pexels.com/photos/2529148/pexels-photo-2529148.jpeg",
+        "https://images.pexels.com/photos/1598505/pexels-photo-1598505.jpeg"
+      ],
+      "owner": "admin"
+    },
+    {
+      "id": 13,
+      "title": "Retro Running Shoes",
+      "description": "A pair of retro-inspired running shoes with a modern twist, featuring a vintage design and a comfortable fit.",
+      "price": 100,
+      "discountPercentage": 10,
+      "rating": 4.6,
+      "stock": 95,
+      "brand": "Adidas",
+      "category": "shoes",
+      "thumbnail": "https://images.pexels.com/photos/2529148/pexels-photo-2529148.jpeg",
+        "images": [
+        "https://images.pexels.com/photos/2529148/pexels-photo-2529148.jpeg",
+        "https://images.pexels.com/photos/1598505/pexels-photo-1598505.jpeg",
+        "https://images.pexels.com/photos/2529148/pexels-photo-2529148.jpeg"
+      ],
+      "owner": "admin"
+    },
+    {
+      "id": 14,
+      "title": "Classic Oxford Shirt Dress",
+      "description": "A classic shirt dress with a button-down front and a flattering waist tie, made from breathable cotton.",
+      "price": 95,
+      "discountPercentage": 12,
+      "rating": 4.7,
+      "stock": 70,
+      "brand": "Brooks Brothers",
+      "category": "women dresses",
+      "thumbnail": "https://images.pexels.com/photos/985635/pexels-photo-985635.jpeg",
+      "images": [
+        "https://images.pexels.com/photos/985635/pexels-photo-985635.jpeg",
+        "https://images.pexels.com/photos/291759/pexels-photo-291759.jpeg",
+        "https://images.pexels.com/photos/985635/pexels-photo-985635.jpeg"
+      ],
+      "owner": "admin"
+    },
+    {
+      "id": 15,
+      "title": "Sweater Dress",
+      "description": "A warm and cozy sweater dress with a ribbed knit design, perfect for a comfortable and stylish look on cold days.",
+      "price": 80,
+      "discountPercentage": 8,
+      "rating": 4.5,
+      "stock": 85,
+      "brand": "Zara",
+      "category": "women dresses",
+      "thumbnail": "https://images.pexels.com/photos/291759/pexels-photo-291759.jpeg",
+      "images": [
+        "https://images.pexels.com/photos/291759/pexels-photo-291759.jpeg",
+        "https://images.pexels.com/photos/985635/pexels-photo-985635.jpeg",
+        "https://images.pexels.com/photos/291759/pexels-photo-291759.jpeg"
+      ],
+      "owner": "admin"
+    },
+    {
+      "id": 16,
+      "title": "Elegant Strapless Dress",
+      "description": "An elegant, strapless evening dress with a fitted bodice and flowing skirt, perfect for formal events.",
+      "price": 150,
+      "discountPercentage": 15,
+      "rating": 4.8,
+      "stock": 45,
+      "brand": "Versace",
+      "category": "women dresses",
+      "thumbnail": "https://images.pexels.com/photos/1807172/pexels-photo-1807172.jpeg",
+      "images": [
+        "https://images.pexels.com/photos/1807172/pexels-photo-1807172.jpeg",
+        "https://images.pexels.com/photos/206395/pexels-photo-206395.jpeg",
+        "https://images.pexels.com/photos/1807172/pexels-photo-1807172.jpeg"
+      ],
+      "owner": "admin"
+    },
+    {
+      "id": 17,
+      "title": "Summer Maxi Dress",
+      "description": "A lightweight and airy maxi dress with a colorful floral pattern, perfect for warm weather and vacations.",
+      "price": 85,
+      "discountPercentage": 10,
+      "rating": 4.6,
+      "stock": 120,
+      "brand": "H&M",
+      "category": "women dresses",
+      "thumbnail": "https://images.pexels.com/photos/206395/pexels-photo-206395.jpeg",
+      "images": [
+        "https://images.pexels.com/photos/206395/pexels-photo-206395.jpeg",
+        "https://images.pexels.com/photos/1807172/pexels-photo-1807172.jpeg",
+        "https://images.pexels.com/photos/206395/pexels-photo-206395.jpeg"
+      ],
+      "owner": "admin"
+    },
+    {
+      "id": 18,
+      "title": "Lace Cocktail Dress",
+      "description": "A chic lace cocktail dress with intricate detailing and a comfortable lining, ideal for parties.",
+      "price": 110,
+      "discountPercentage": 10,
+      "rating": 4.7,
+      "stock": 60,
+      "brand": "Zara",
+      "category": "women dresses",
+      "thumbnail": "https://images.pexels.com/photos/923210/pexels-photo-923210.jpeg",
+      "images": [
+        "https://images.pexels.com/photos/923210/pexels-photo-923210.jpeg",
+        "https://images.pexels.com/photos/1537494/pexels-photo-1537494.jpeg",
+        "https://images.pexels.com/photos/923210/pexels-photo-923210.jpeg"
+      ],
+      "owner": "admin"
+    },
+    {
+      "id": 19,
+      "title": "Casual Knit Sweater Dress",
+      "description": "A soft knit sweater dress with a relaxed fit, perfect for chilly evenings and casual outings.",
+      "price": 75,
+      "discountPercentage": 8,
+      "rating": 4.5,
+      "stock": 90,
+      "brand": "Uniqlo",
+      "category": "women dresses",
+      "thumbnail": "https://images.pexels.com/photos/1537494/pexels-photo-1537494.jpeg",
+      "images": [
+        "https://images.pexels.com/photos/1537494/pexels-photo-1537494.jpeg",
+        "https://images.pexels.com/photos/923210/pexels-photo-923210.jpeg",
+        "https://images.pexels.com/photos/1537494/pexels-photo-1537494.jpeg"
+      ],
+      "owner": "admin"
+    },
+    {
+      "id": 20,
+      "title": "Minimalist Smartwatch",
+      "description": "A sleek and minimalist smartwatch with a high-resolution display, heart rate monitor, and a 7-day battery life.",
+      "price": 250,
+      "discountPercentage": 15,
+      "rating": 4.9,
+      "stock": 40,
+      "brand": "Apple",
+      "category": "watches",
+      "thumbnail": "https://images.pexels.com/photos/1162519/pexels-photo-1162519.jpeg",
+      "images": [
+        "https://images.pexels.com/photos/1162519/pexels-photo-1162519.jpeg",
+        "https://images.pexels.com/photos/1120275/pexels-photo-1120275.jpeg",
+        "https://images.pexels.com/photos/1162519/pexels-photo-1162519.jpeg"
+      ],
+      "owner": "admin"
+    },
+    {
+      "id": 21,
+      "title": "Sports Digital Watch",
+      "description": "A rugged digital sports watch with multiple functions including a stopwatch, lap timer, and water resistance for swimming.",
+      "price": 90,
+      "discountPercentage": 10,
+      "rating": 4.6,
+      "stock": 80,
+      "brand": "Casio",
+      "category": "watches",
+      "thumbnail": "https://images.pexels.com/photos/1120275/pexels-photo-1120275.jpeg",
+      "images": [
+        "https://images.pexels.com/photos/1120275/pexels-photo-1120275.jpeg",
+        "https://images.pexels.com/photos/1162519/pexels-photo-1162519.jpeg",
+        "https://images.pexels.com/photos/1120275/pexels-photo-1120275.jpeg"
+      ],
+      "owner": "admin"
+    },
+    {
+      "id": 22,
+      "title": "Luxury Analog Watch",
+      "description": "An exquisite analog watch with a genuine leather strap and a diamond-studded bezel, perfect for a luxurious look.",
+      "price": 350,
+      "discountPercentage": 20,
+      "rating": 4.9,
+      "stock": 25,
+      "brand": "Rolex",
+      "category": "watches",
+      "thumbnail": "https://images.pexels.com/photos/592815/pexels-photo-592815.jpeg",
+      "images": [
+        "https://images.pexels.com/photos/592815/pexels-photo-592815.jpeg",
+        "https://images.pexels.com/photos/1374128/pexels-photo-1374128.jpeg",
+        "https://images.pexels.com/photos/592815/pexels-photo-592815.jpeg"
+      ],
+      "owner": "admin"
+    },
+    {
+      "id": 23,
+      "title": "Minimalist T-shirt",
+      "description": "A simple and clean t-shirt with a relaxed fit, made from eco-friendly cotton for a comfortable and sustainable feel.",
+      "price": 28,
+      "discountPercentage": 5,
+      "rating": 4.5,
+      "stock": 150,
+      "brand": "Everlane",
+      "category": "men tshirts",
+      "thumbnail": "https://images.pexels.com/photos/1561011/pexels-photo-1561011.jpeg",
+      "images": [
+        "https://images.pexels.com/photos/1561011/pexels-photo-1561011.jpeg",
+        "https://images.pexels.com/photos/220139/pexels-photo-220139.jpeg",
+        "https://images.pexels.com/photos/1561011/pexels-photo-1561011.jpeg"
+      ],
+      "owner": "admin"
+    },
+    {
+      "id": 24,
+      "title": "Vibrant T-shirt",
+      "description": "A vibrant and colorful t-shirt with a bold graphic print, perfect for making a statement.",
+      "price": 32,
+      "discountPercentage": 7,
+      "rating": 4.6,
+      "stock": 130,
+      "brand": "Supreme",
+      "category": "men tshirts",
+      "thumbnail": "https://images.pexels.com/photos/220139/pexels-photo-220139.jpeg",
+      "images": [
+       "https://images.pexels.com/photos/220139/pexels-photo-220139.jpeg",
+       "https://images.pexels.com/photos/1561011/pexels-photo-1561011.jpeg",
+       "https://images.pexels.com/photos/220139/pexels-photo-220139.jpeg"
+      ],
+      "owner": "admin"
+    },
+    {
+      "id": 25,
+      "title": "Performance T-shirt",
+      "description": "A moisture-wicking and breathable t-shirt designed for athletic performance and training.",
+      "price": 45,
+      "discountPercentage": 10,
+      "rating": 4.8,
+      "stock": 100,
+      "brand": "Under Armour",
+      "category": "men tshirts",
+      "thumbnail": "https://images.pexels.com/photos/1018911/pexels-photo-1018911.jpeg",
+      "images": [
+        "https://images.pexels.com/photos/1018911/pexels-photo-1018911.jpeg",
+        "https://images.pexels.com/photos/1484808/pexels-photo-1484808.jpeg",
+        "https://images.pexels.com/photos/1018911/pexels-photo-1018911.jpeg"
+      ],
+      "owner": "admin"
+    },
+    {
+      "id": 26,
+      "title": "Classic Polo Shirt",
+      "description": "A timeless polo shirt with a classic collar and a three-button placket, perfect for a smart-casual look.",
+      "price": 40,
+      "discountPercentage": 8,
+      "rating": 4.7,
+      "stock": 110,
+      "brand": "Polo Ralph Lauren",
+      "category": "men tshirts",
+      "thumbnail": "https://images.pexels.com/photos/1484808/pexels-photo-1484808.jpeg",
+      "images": [
+        "https://images.pexels.com/photos/1484808/pexels-photo-1484808.jpeg",
+        "https://images.pexels.com/photos/1018911/pexels-photo-1018911.jpeg",
+        "https://images.pexels.com/photos/1484808/pexels-photo-1484808.jpeg"
+      ],
+      "owner": "admin"
+    },
+    {
+      "id": 27,
+      "title": "Vintage T-shirt",
+      "description": "A vintage-inspired t-shirt with a faded graphic print and a soft, worn-in feel.",
+      "price": 35,
+      "discountPercentage": 6,
+      "rating": 4.4,
+      "stock": 80,
+      "brand": "Urban Outfitters",
+      "category": "men tshirts",
+      "thumbnail": "https://images.pexels.com/photos/1432379/pexels-photo-1432379.jpeg",
+      "images": [
+        "https://images.pexels.com/photos/1432379/pexels-photo-1432379.jpeg",
+        "https://images.pexels.com/photos/1868567/pexels-photo-1868567.jpeg",
+        "https://images.pexels.com/photos/1432379/pexels-photo-1432379.jpeg"
+      ],
+      "owner": "admin"
+    },
+    {
+      "id": 28,
+      "title": "High-Top Sneakers",
+      "description": "Classic high-top sneakers with a canvas upper and a durable rubber sole, perfect for a casual urban look.",
+      "price": 95,
+      "discountPercentage": 10,
+      "rating": 4.7,
+      "stock": 70,
+      "brand": "Converse",
+      "category": "shoes",
+      "thumbnail": "https://images.pexels.com/photos/1407354/pexels-photo-1407354.jpeg",
+      "images": [
+        "https://images.pexels.com/photos/1407354/pexels-photo-1407354.jpeg",
+        "https://images.pexels.com/photos/786003/pexels-photo-786003.jpeg",
+        "https://images.pexels.com/photos/1407354/pexels-photo-1407354.jpeg"
+      ],
+      "owner": "admin"
+    },
+    {
+      "id": 29,
+      "title": "Hiking Boots",
+      "description": "Sturdy and waterproof hiking boots with excellent ankle support and a non-slip sole, ideal for outdoor adventures.",
+      "price": 160,
+      "discountPercentage": 15,
+      "rating": 4.8,
+      "stock": 50,
+      "brand": "Timberland",
+      "category": "shoes",
+      "thumbnail": "https://images.pexels.com/photos/786003/pexels-photo-786003.jpeg",
+      "images": [
+        "https://images.pexels.com/photos/786003/pexels-photo-786003.jpeg",
+        "https://images.pexels.com/photos/1159670/pexels-photo-1159670.jpeg",
+        "https://images.pexels.com/photos/786003/pexels-photo-786003.jpeg"
+      ],
+      "owner": "admin"
+    },
+    {
+      "id": 30,
+      "title": "Dress Shoes",
+      "description": "Elegant and polished leather dress shoes with a comfortable insole, perfect for formal occasions and work.",
+      "price": 180,
+      "discountPercentage": 10,
+      "rating": 4.9,
+      "stock": 40,
+      "brand": "Cole Haan",
+      "category": "shoes",
+      "thumbnail": "https://images.pexels.com/photos/1159670/pexels-photo-1159670.jpeg",
+      "images": [
+        "https://images.pexels.com/photos/1159670/pexels-photo-1159670.jpeg",
+        "https://images.pexels.com/photos/1027130/pexels-photo-1027130.jpeg",
+        "https://images.pexels.com/photos/1159670/pexels-photo-1159670.jpeg"
+      ],
+      "owner": "admin"
+    },
+    {
+      "id": 31,
+      "title": "Slip-On Loafers",
+      "description": "Comfortable and stylish slip-on loafers with a soft leather finish, ideal for a relaxed and sophisticated look.",
+      "price": 120,
+      "discountPercentage": 8,
+      "rating": 4.6,
+      "stock": 60,
+      "brand": "Gucci",
+      "category": "shoes",
+      "thumbnail": "https://images.pexels.com/photos/1027130/pexels-photo-1027130.jpeg",
+      "images": [
+        "https://images.pexels.com/photos/1027130/pexels-photo-1027130.jpeg",
+        "https://images.pexels.com/photos/5214139/pexels-photo-5214139.jpeg",
+        "https://images.pexels.com/photos/1027130/pexels-photo-1027130.jpeg"
+      ],
+      "owner": "admin"
+    },
+    {
+      "id": 32,
+      "title": "Ballet Flats",
+      "description": "A classic pair of ballet flats with a comfortable fit and a versatile design, suitable for any occasion.",
+      "price": 70,
+      "discountPercentage": 5,
+      "rating": 4.5,
+      "stock": 100,
+      "brand": "Tory Burch",
+      "category": "shoes",
+      "thumbnail": "https://images.pexels.com/photos/5214139/pexels-photo-5214139.jpeg",
+      "images": [
+        "https://images.pexels.com/photos/5214139/pexels-photo-5214139.jpeg",
+        "https://images.pexels.com/photos/1027130/pexels-photo-1027130.jpeg",
+        "https://images.pexels.com/photos/5214139/pexels-photo-5214139.jpeg"
+      ],
+      "owner": "admin"
+    },
+    {
+      "id": 33,
+      "title": "Women's Denim Dress",
+      "description": "A stylish denim dress with a classic button-down design and a flattering A-line silhouette.",
+      "price": 90,
+      "discountPercentage": 10,
+      "rating": 4.6,
+      "stock": 80,
+      "brand": "Levi's",
+      "category": "women dresses",
+      "thumbnail": "https://images.pexels.com/photos/16110143/pexels-photo-16110143.jpeg",
+      "images": [
+        "https://images.pexels.com/photos/2173357/pexels-photo-2173357.jpeg",
+        "https://images.pexels.com/photos/16110143/pexels-photo-16110143.jpeg",
+        "https://images.pexels.com/photos/2173357/pexels-photo-2173357.jpeg"
+      ],
+      "owner": "admin"
+    },
+    {
+      "id": 34,
+      "title": "Classic Polo Dress",
+      "description": "A timeless polo dress with a comfortable fit and a preppy look, perfect for a casual yet polished style.",
+      "price": 75,
+      "discountPercentage": 8,
+      "rating": 4.5,
+      "stock": 90,
+      "brand": "Ralph Lauren",
+      "category": "women dresses",
+      "thumbnail": "https://images.pexels.com/photos/31861759/pexels-photo-31861759.jpeg",
+      "images": [
+       "https://images.pexels.com/photos/31861759/pexels-photo-31861759.jpeg",
+        "https://images.pexels.com/photos/2173357/pexels-photo-2173357.jpeg",
+        "https://images.pexels.com/photos/16110143/pexels-photo-16110143.jpeg"
+      ],
+      "owner": "admin"
+    },
+    {
+      "id": 35,
+      "title": "Off-Shoulder Floral Dress",
+      "description": "An off-shoulder floral dress with a romantic and feminine silhouette, perfect for a summer date night.",
+      "price": 95,
+      "discountPercentage": 12,
+      "rating": 4.7,
+      "stock": 70,
+      "brand": "Mango",
+      "category": "women dresses",
+      "thumbnail": "https://images.pexels.com/photos/31861759/pexels-photo-31861759.jpeg",
+      "images": [
+        "https://images.pexels.com/photos/16110143/pexels-photo-16110143.jpeg",
+        "https://images.pexels.com/photos/2173357/pexels-photo-2173357.jpeg",
+        "https://images.pexels.com/photos/31861759/pexels-photo-31861759.jpeg"
+      ],
+      "owner": "admin"
+    },
+    {
+      "id": 36,
+      "title": "Stylish Dress",
+      "description": "A classic, stylish designer dress, perfect for a cool and edgy look.",
+      "price": 250,
+      "discountPercentage": 15,
+      "rating": 4.8,
+      "stock": 35,
+      "brand": "Gucci",
+      "category": "women dresses",
+      "thumbnail": "https://images.pexels.com/photos/2173357/pexels-photo-2173357.jpeg",
+      "images": [
+        "https://images.pexels.com/photos/2173357/pexels-photo-2173357.jpeg",
+        "https://images.pexels.com/photos/1432379/pexels-photo-1432379.jpeg",
+        "https://images.pexels.com/photos/2173357/pexels-photo-2173357.jpeg"
+      ],
+      "owner": "admin"
+    },
+    {
+      "id": 37,
+      "title": "Classic Trench Coat",
+      "description": "A timeless trench coat with a double-breasted design and a flattering belt, perfect for a sophisticated look.",
+      "price": 180,
+      "discountPercentage": 10,
+      "rating": 4.9,
+      "stock": 50,
+      "brand": "Burberry",
+      "category": "women dresses",
+      "thumbnail": "https://images.pexels.com/photos/33669518/pexels-photo-33669518.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+      "images": [
+        "https://images.pexels.com/photos/2173357/pexels-photo-2173357.jpeg",
+        "https://images.pexels.com/photos/1432379/pexels-photo-1432379.jpeg",
+        "https://images.pexels.com/photos/2173357/pexels-photo-2173357.jpeg"
+      ],
+      "owner": "admin"
+    },
+    {
+      "id": 38,
+      "title": "Men's Slim Fit Jeans",
+      "description": "A pair of slim fit jeans with a comfortable stretch and a classic five-pocket design, perfect for everyday wear.",
+      "price": 85,
+      "discountPercentage": 10,
+      "rating": 4.6,
+      "stock": 150,
+      "brand": "Levi's",
+      "category": "men tshirts",
+      "thumbnail": "https://images.pexels.com/photos/1887975/pexels-photo-1887975.jpeg",
+      "images": [
+        "https://images.pexels.com/photos/1887975/pexels-photo-1887975.jpeg",
+        "https://images.pexels.com/photos/18398385/pexels-photo-18398385.jpeg",
+        "https://images.pexels.com/photos/1887975/pexels-photo-1887975.jpeg"
+      ],
+      "owner": "admin"
+    },
+    {
+      "id": 39,
+      "title": "Hooded Sweatshirt",
+      "description": "A cozy hooded sweatshirt with a soft fleece lining and a kangaroo pocket, perfect for layering on cool days.",
+      "price": 55,
+      "discountPercentage": 8,
+      "rating": 4.7,
+      "stock": 120,
+      "brand": "Nike",
+      "category": "men tshirts",
+      "thumbnail": "https://images.pexels.com/photos/1887975/pexels-photo-1887975.jpeg",
+      "images": [
+        "https://images.pexels.com/photos/1887975/pexels-photo-1887975.jpeg",
+        "https://images.pexels.com/photos/18398385/pexels-photo-18398385.jpeg",
+        "https://images.pexels.com/photos/1887975/pexels-photo-1887975.jpeg"
+      ],
+      "owner": "admin"
+    },
+    {
+      "id": 40,
+      "title": "T-shirt for men",
+      "description": "A classic formal blazer with a tailored fit and a structured design, perfect for business and special occasions.",
+      "price": 180,
+      "discountPercentage": 10,
+      "rating": 4.9,
+      "stock": 40,
+      "brand": "Hugo Boss",
+      "category": "men tshirts",
+      "thumbnail": "https://images.pexels.com/photos/1868567/pexels-photo-1868567.jpeg",
+      "images": [
+        "https://images.pexels.com/photos/1868567/pexels-photo-1868567.jpeg",
+        "https://images.pexels.com/photos/1887975/pexels-photo-1887975.jpeg",
+        "https://images.pexels.com/photos/1868567/pexels-photo-1868567.jpeg"
+      ],
+      "owner": "admin"
+    },
+    {
+      "id": 41,
+      "title": "Running Shorts",
+      "description": "Lightweight running shorts with a moisture-wicking fabric and an elastic waistband, perfect for workouts.",
+      "price": 35,
+      "discountPercentage": 7,
+      "rating": 4.6,
+      "stock": 150,
+      "brand": "Adidas",
+      "category": "men tshirts",
+      "thumbnail": "https://images.pexels.com/photos/18398385/pexels-photo-18398385.jpeg",
+      "images": [
+        "https://images.pexels.com/photos/18398385/pexels-photo-18398385.jpeg",
+        "https://images.pexels.com/photos/1887975/pexels-photo-1887975.jpeg",
+        "https://images.pexels.com/photos/18398385/pexels-photo-18398385.jpeg"
+      ],
+      "owner": "admin"
+    },
+    {
+      "id": 42,
+      "title": "Classic Sneakers",
+      "description": "A timeless pair of sneakers with a low-top design and a cushioned insole, perfect for everyday comfort.",
+      "price": 85,
+      "discountPercentage": 10,
+      "rating": 4.8,
+      "stock": 90,
+      "brand": "Vans",
+      "category": "shoes",
+      "thumbnail": "https://images.pexels.com/photos/1478442/pexels-photo-1478442.jpeg",
+      "images": [
+        "https://images.pexels.com/photos/1478442/pexels-photo-1478442.jpeg",
+        "https://images.pexels.com/photos/2421374/pexels-photo-2421374.jpeg",
+        "https://images.pexels.com/photos/1478442/pexels-photo-1478442.jpeg"
+      ],
+      "owner": "admin"
+    },
+    {
+      "id": 43,
+      "title": "Platform Boots",
+      "description": "A pair of stylish platform boots with a chunky sole and a lace-up design, perfect for a bold and fashionable look.",
+      "price": 130,
+      "discountPercentage": 12,
+      "rating": 4.7,
+      "stock": 50,
+      "brand": "Dr. Martens",
+      "category": "shoes",
+      "thumbnail": "https://images.pexels.com/photos/1451760/pexels-photo-1451760.jpeg",
+      "images": [
+        "https://images.pexels.com/photos/1451760/pexels-photo-1451760.jpeg",
+        "https://images.pexels.com/photos/1478442/pexels-photo-1478442.jpeg",
+        "https://images.pexels.com/photos/1451760/pexels-photo-1451760.jpeg"
+      ],
+      "owner": "admin"
+    },
+    {
+      "id": 44,
+      "title": "Chunky Sneakers",
+      "description": "A pair of trendy chunky sneakers with a bold design and a cushioned sole, perfect for a street-style look.",
+      "price": 110,
+      "discountPercentage": 10,
+      "rating": 4.6,
+      "stock": 70,
+      "brand": "Balenciaga",
+      "category": "shoes",
+      "thumbnail": "https://images.pexels.com/photos/2421374/pexels-photo-2421374.jpeg",
+      "images": [
+        "https://images.pexels.com/photos/2421374/pexels-photo-2421374.jpeg",
+        "https://images.pexels.com/photos/1478442/pexels-photo-1478442.jpeg",
+        "https://images.pexels.com/photos/2421374/pexels-photo-2421374.jpeg"
+      ],
+      "owner": "admin"
+    },
+    {
+      "id": 45,
+      "title": "Stiletto Heels",
+      "description": "An elegant pair of stiletto heels with a pointed toe and a sleek design, perfect for a glamorous evening look.",
+      "price": 150,
+      "discountPercentage": 15,
+      "rating": 4.9,
+      "stock": 40,
+      "brand": "Christian Louboutin",
+      "category": "shoes",
+      "thumbnail": "https://images.pexels.com/photos/3782786/pexels-photo-3782786.jpeg",
+      "images": [
+        "https://images.pexels.com/photos/3782786/pexels-photo-3782786.jpeg",
+        "https://images.pexels.com/photos/1507351/pexels-photo-1507351.jpeg",
+        "https://images.pexels.com/photos/3782786/pexels-photo-3782786.jpeg"
+      ],
+      "owner": "admin"
+    },
+    {
+      "id": 46,
+      "title": "Leather Ankle Boots",
+      "description": "A pair of stylish leather ankle boots with a low heel and a side zipper, perfect for a chic and versatile look.",
+      "price": 120,
+      "discountPercentage": 10,
+      "rating": 4.7,
+      "stock": 60,
+      "brand": "Steve Madden",
+      "category": "shoes",
+      "thumbnail": "https://images.pexels.com/photos/1942880/pexels-photo-1942880.jpeg",
+      "images": [
+        "https://images.pexels.com/photos/1942880/pexels-photo-1942880.jpeg",
+        "https://images.pexels.com/photos/1451760/pexels-photo-1451760.jpeg",
+        "https://images.pexels.com/photos/1942880/pexels-photo-1942880.jpeg"
+      ],
+      "owner": "admin"
+    },
+    {
+      "id": 47,
+      "title": "Leather Backpack",
+      "description": "A durable and stylish leather backpack with multiple compartments and a padded laptop sleeve, perfect for work and travel.",
+      "price": 200,
+      "discountPercentage": 15,
+      "rating": 4.9,
+      "stock": 30,
+      "brand": "Fossil",
+      "category": "accessories",
+      "thumbnail": "https://images.pexels.com/photos/3731256/pexels-photo-3731256.jpeg",
+      "images": [
+        "https://images.pexels.com/photos/3731256/pexels-photo-3731256.jpeg",
+        "https://images.pexels.com/photos/1294731/pexels-photo-1294731.jpeg",
+        "https://images.pexels.com/photos/3731256/pexels-photo-3731256.jpeg"
+      ],
+      "owner": "admin"
+    },
+    {
+      "id": 48,
+      "title": "Bagpack Skybags",
+      "description": "A classic bagpack with cool look.",
+      "price": 90,
+      "discountPercentage": 10,
+      "rating": 4.8,
+      "stock": 70,
+      "brand": "Skybags",
+      "category": "accessories",
+      "thumbnail": "https://images.pexels.com/photos/1294731/pexels-photo-1294731.jpeg",
+      "images": [
+        "https://images.pexels.com/photos/3731256/pexels-photo-3731256.jpeg",
+        "https://images.pexels.com/photos/1294731/pexels-photo-1294731.jpeg",
+        "https://images.pexels.com/photos/3731256/pexels-photo-3731256.jpeg"
+      ],
+      "owner": "admin"
+    },
+    {
+      "id": 49,
+      "title": "Leather Wallet",
+      "description": "A genuine leather wallet with multiple card slots and a coin pocket, perfect for organizing your essentials.",
+      "price": 50,
+      "discountPercentage": 8,
+      "rating": 4.7,
+      "stock": 100,
+      "brand": "Coach",
+      "category": "accessories",
+      "thumbnail": "https://images.pexels.com/photos/1420707/pexels-photo-1420707.jpeg",
+      "images": [
+        "https://images.pexels.com/photos/1420707/pexels-photo-1420707.jpeg",
+        "https://images.pexels.com/photos/915915/pexels-photo-915915.jpeg",
+        "https://images.pexels.com/photos/1420707/pexels-photo-1420707.jpeg"
+      ],
+      "owner": "admin"
+    },
+    {
+      "id": 50,
+      "title": "Classic Wallet",
+      "description": "A luxurious wallet with a vibrant print and a soft, lightweight feel, perfect for a chic and elegant look.",
+      "price": 80,
+      "discountPercentage": 10,
+      "rating": 4.8,
+      "stock": 60,
+      "brand": "Hermès",
+      "category": "accessories",
+      "thumbnail": "https://images.pexels.com/photos/915915/pexels-photo-915915.jpeg",
+      "images": [
+        "https://images.pexels.com/photos/915915/pexels-photo-915915.jpeg",
+        "https://images.pexels.com/photos/1420707/pexels-photo-1420707.jpeg",
+        "https://images.pexels.com/photos/915915/pexels-photo-915915.jpeg"
+      ],
+      "owner": "admin"
+    }
+  ],
+  "total": 50,
+  "skip": 0,
+  "limit": 50
+}

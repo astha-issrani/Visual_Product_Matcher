@@ -7,9 +7,10 @@ from tqdm import tqdm
 import pickle
 import requests
 from io import BytesIO
+import os
 
 # Load data from your products.json file
-with open('../shop_app/shop_app/products.json', 'r') as f:
+with open('../Shop_App/shop_app/products.json', 'r') as f:
     products_data = json.load(f)
 
 # Create a list of image URLs from the product data
@@ -32,10 +33,7 @@ valid_paths = []
 
 for product in tqdm(product_images):
     try:
-        # Download the image from the URL
         response = requests.get(product['url'], timeout=10)
-        
-        # Raise an exception for bad status codes (4xx or 5xx)
         response.raise_for_status() 
         
         image = Image.open(BytesIO(response.content))
@@ -43,13 +41,12 @@ for product in tqdm(product_images):
         preprocessed_image = preprocess(image).unsqueeze(0).to(device)
         with torch.no_grad():
             features = model.encode_image(preprocessed_image)
-        features /= features.norm(dim=-1, keepdim=True) # normalize
+        features /= features.norm(dim=-1, keepdim=True)
         embeddings.append(features.cpu().numpy())
-        valid_paths.append(product['url']) # Use the URL as the path
+        valid_paths.append(product['url'])
 
     except Exception as e:
         print("❌ Error with product ID:", product['id'], "URL:", product['url'], e)
-        # Use a continue statement to skip to the next product if there's an error
         continue
 
 embeddings = np.vstack(embeddings)

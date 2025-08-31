@@ -24,7 +24,7 @@
 
 ## Technology Stack
 
-# Frontend:
+## Frontend:
 
 Node.js: As the server environment.
 
@@ -36,7 +36,7 @@ HTML, CSS, JavaScript: For the core frontend experience.
 
 Bootstrap: For responsive styling and UI components.
 
-# Backend (Microservice):
+## Backend (Microservice):
 
 Python: To run the machine learning model.
 
